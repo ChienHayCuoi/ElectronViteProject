@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { ref } from "vue";
+import "primeicons/primeicons.css";
 
 const newTodo = ref("");
-const todos = ref<string[]>([]);
+const todos = ref<string[]>(["Học bài", "Đá bóng", "Xem phim"]);
 const message = ref("");
 
 const addTodo = () => {
@@ -43,7 +44,9 @@ const clearAll = () => {
     <ul>
       <li v-for="(todo, index) in todos" :key="index">
         {{ todo }}
-        <button class="delete" @click="removeTodo(index)">🗑️</button>
+        <button class="delete" @click="removeTodo(index)">
+          <i class="pi pi-trash"></i>
+        </button>
       </li>
     </ul>
   </div>
