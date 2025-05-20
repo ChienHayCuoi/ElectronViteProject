@@ -7,9 +7,15 @@ import Button from "primevue/button";
 import ToastService from "primevue/toastservice";
 import Toast from "primevue/toast";
 import "primeicons/primeicons.css";
+import Aura from "@primeuix/themes/aura";
 
 const app = createApp(App);
-app.use(PrimeVue, { ripple: true });
+app.use(PrimeVue, {
+  ripple: true,
+  theme: {
+    preset: Aura,
+  },
+});
 app.use(ToastService);
 app.component("InputText", InputText);
 app.component("Button", Button);

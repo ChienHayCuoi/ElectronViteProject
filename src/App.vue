@@ -68,12 +68,12 @@ const clearAll = () => {
             v-model="newTodo"
             @keyup.enter="addTodo"
             placeholder="Thêm todo mới..."
-            class="flex-1 !border !border-black !rounded-lg focus:!ring-2 !px-4 !py-2"
+            class="flex-1 !border !rounded-lg !px-4 !py-2"
           />
           <Button
             icon="pi pi-plus"
             @click="addTodo"
-            class="!bg-indigo-500 !px-4 !py-2 !rounded-lg transition-all duration-200 hover:!shadow-lg hover:!scale-105 [&_.p-button-icon]:!text-sm"
+            class="!px-4 !py-2 !rounded-lg transition-all duration-200 hover:!shadow-lg hover:!scale-105 [&_.p-button-icon]:!text-sm"
           />
         </div>
 
@@ -88,7 +88,7 @@ const clearAll = () => {
           <Button
             label="Xóa tất cả"
             @click="clearAll"
-            class="!bg-red-500 hover:!bg-red-500 !px-4 !py-2 !rounded-lg transition-all duration-200 hover:!shadow-lg hover:!scale-105 !text-white"
+            class="!bg-red-500 !border !border-red-500 !px-4 !py-2 !rounded-lg transition-all duration-200 hover:!shadow-lg hover:!scale-105 !text-white"
           />
         </div>
 
@@ -102,7 +102,7 @@ const clearAll = () => {
             <Button
               icon="pi pi-trash"
               @click="removeTodo(index)"
-              class="p-button-danger p-button-rounded p-button-text hover:!bg-red-500 !px-4 !py-2 !rounded-lg transition-all duration-200 hover:!scale-110"
+              class="p-button-danger p-button-rounded p-button-text !px-4 !py-2 !rounded-lg transition-all duration-200 hover:!scale-110"
             />
           </li>
         </ul>
