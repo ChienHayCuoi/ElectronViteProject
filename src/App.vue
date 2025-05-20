@@ -72,6 +72,7 @@ const clearAll = () => {
           />
           <Button
             icon="pi pi-plus"
+            severity="success"
             @click="addTodo"
             class="!bg-indigo-500 !px-4 !py-2 !rounded-lg transition-all duration-200 hover:!shadow-lg hover:!scale-105 [&_.p-button-icon]:!text-sm"
           />
@@ -88,7 +89,7 @@ const clearAll = () => {
           <Button
             label="Xóa tất cả"
             @click="clearAll"
-            class="!bg-red-500 hover:!bg-red-500 !px-4 !py-2 !rounded-lg transition-all duration-200 hover:!shadow-lg hover:!scale-105"
+            class="!bg-red-500 hover:!bg-red-500 !px-4 !py-2 !rounded-lg transition-all duration-200 hover:!shadow-lg hover:!scale-105 !text-white"
           />
         </div>
 
