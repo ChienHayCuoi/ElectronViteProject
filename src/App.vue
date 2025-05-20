@@ -102,7 +102,7 @@ const clearAll = () => {
             <Button
               icon="pi pi-trash"
               @click="removeTodo(index)"
-              class="p-button-danger p-button-rounded p-button-text hover:!bg-red-600 !px-4 !py-2 !rounded-lg transition-all duration-200 hover:!scale-110"
+              class="p-button-danger p-button-rounded p-button-text hover:!bg-red-500 !px-4 !py-2 !rounded-lg transition-all duration-200 hover:!scale-110"
             />
           </li>
         </ul>
