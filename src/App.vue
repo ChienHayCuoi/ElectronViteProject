@@ -68,11 +68,10 @@ const clearAll = () => {
             v-model="newTodo"
             @keyup.enter="addTodo"
             placeholder="Thêm todo mới..."
-            class="flex-1 !border !border-black !rounded-lg focus:!ring-2 px-4 py-2"
+            class="flex-1 !border !border-black !rounded-lg focus:!ring-2 !px-4 !py-2"
           />
           <Button
             icon="pi pi-plus"
-            severity="success"
             @click="addTodo"
             class="!bg-indigo-500 !px-4 !py-2 !rounded-lg transition-all duration-200 hover:!shadow-lg hover:!scale-105 [&_.p-button-icon]:!text-sm"
           />
